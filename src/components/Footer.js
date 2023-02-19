@@ -11,7 +11,7 @@ const Footer = () => {
     <Container>
       <Stack mt={10}>
         <Grid container spacing={1} justifyContent="space-between">
-          <Grid md={4} mt={3}>
+          <Grid item md={4} mt={3}>
             <Stack direction="row" spacing={2}>
               <Image src={Logo} alt="Logo" width={42} height={39} />
               <Typography
@@ -35,7 +35,7 @@ const Footer = () => {
               <Image src={Leaf3} alt="Leaf" />
             </Box>
           </Grid>
-          <Grid md={2} mt={3}>
+          <Grid item md={2} mt={3}>
             <Typography
               fontSize={25}
               fontFamily="Poppins"
@@ -43,9 +43,9 @@ const Footer = () => {
               color="#2A2521">
               Main Menu
             </Typography>
-            {mainMenu.map((menu) => (
+            {mainMenu.map((menu, index) => (
               <Typography
-                key={menu}
+                key={index}
                 mt={3}
                 fontSize={25}
                 fontFamily="Poppins"
@@ -56,7 +56,7 @@ const Footer = () => {
               </Typography>
             ))}
           </Grid>
-          <Grid md={3} mt={3}>
+          <Grid item md={3} mt={3}>
             <Typography
               fontSize={25}
               fontFamily="Poppins"
@@ -64,9 +64,9 @@ const Footer = () => {
               color="#2A2521">
               Information
             </Typography>
-            {info.map((info) => (
+            {info.map((info, index) => (
               <Typography
-                key={info}
+                key={index}
                 mt={3}
                 fontSize={25}
                 fontFamily="Poppins"
@@ -77,7 +77,7 @@ const Footer = () => {
               </Typography>
             ))}
           </Grid>
-          <Grid md={2} mt={3}>
+          <Grid item md={2} mt={3}>
             <Typography
               fontSize={25}
               fontFamily="Poppins"
@@ -86,7 +86,6 @@ const Footer = () => {
               Address
             </Typography>
             <Typography
-              key={info}
               mt={3}
               fontSize={25}
               fontFamily="Poppins"
@@ -121,8 +120,8 @@ const Footer = () => {
           </Stack>
           <Box mt={5}>
             <Grid container spacing={1}>
-              {bankImg.map((img) => (
-                <Grid item xs={4} md={2} key={img}>
+              {bankImg.map((img, index) => (
+                <Grid item xs={4} md={2} key={index}>
                   <Image src={img} alt={img} />
                 </Grid>
               ))}

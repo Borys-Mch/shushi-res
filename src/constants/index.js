@@ -22,7 +22,7 @@ export const socialIcons = [
   { icon: Instagram, link: "https://www.instagram.com/" },
 ];
 
-export const bankImg = [amexp, apple, google, mcard, paypal, visa];
+export const bankImg = [visa, mcard, amexp, paypal, apple, google];
 
 export const mainMenu = ["About", "Menus", "Offers", "Events"];
 
