@@ -1,9 +1,10 @@
-import { Box, Container, Stack, Typography } from "@mui/material";
+import { Box, Button, Container, Stack, Typography } from "@mui/material";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import React from "react";
 
 const Recently = () => {
   return (
-    <Container id="about">
+    <Container id="recently">
       <Stack
         direction={{ sm: "row-reverse", md: "row" }}
         spacing={{ md: 13 }}
@@ -28,6 +29,15 @@ const Recently = () => {
               Take a look at what’s new . And do not depreve yourself of a good
               meal, enjoy and be happy.
             </Typography>
+          </Box>
+          <Box mt={5}>
+            <Button
+              variant="contained"
+              color="warning"
+              size="large"
+              sx={{ py: "17px", px: "20px", borderRadius: "32px" }}>
+              Order Now <ArrowForwardIcon sx={{ ml: "10px" }} />
+            </Button>
           </Box>
         </Stack>
         <Box

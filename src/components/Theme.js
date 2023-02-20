@@ -46,6 +46,10 @@ const theme = createTheme({
       fontWeight: 400,
       color: "#FF8F1E",
     },
+    fieldset: {
+      borderRadius: "36px",
+      borderStyle: "none",
+    },
   },
 });
 

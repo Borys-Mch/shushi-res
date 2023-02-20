@@ -1,4 +1,5 @@
 import { Box, Button, Container, Stack, Typography } from "@mui/material";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import React from "react";
 
 const Baner = () => {
@@ -45,8 +46,8 @@ const Baner = () => {
               variant="contained"
               color="warning"
               size="large"
-              sx={{ p: "10px" }}>
-              Order Now &rarr;
+              sx={{ py: "17px", px: "20px", borderRadius: "32px" }}>
+              Order Now <ArrowForwardIcon sx={{ ml: "10px" }} />
             </Button>
           </Box>
         </Stack>
