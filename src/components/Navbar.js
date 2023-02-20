@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { Menu, Close } from "@mui/icons-material";
-import { Container, Stack, Link, IconButton } from "@mui/material";
-import Image from "next/image";
+import { Container, Stack, Link, IconButton, Box } from "@mui/material";
 
-import Logo from "../../public/images/logo.svg";
 import { navItems } from "@/constants";
 
 const Navbar = () => {
@@ -17,7 +15,13 @@ const Navbar = () => {
         alignItems="center"
         position="relative">
         <Stack direction={"row"} spacing={2} my={5} alignItems="center">
-          <Image src={Logo} alt="Logo" width={42} height={39} />
+          <Box
+            component="img"
+            src="/images/logo.svg"
+            alt="Logo"
+            width={42}
+            height={39}
+          />
           <Link href={"/"} color="#2A2521" underline="none">
             <h2>Shushi</h2>
           </Link>

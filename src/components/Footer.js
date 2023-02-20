@@ -2,8 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { Box, Container, Grid, Link, Stack, Typography } from "@mui/material";
 
-import Logo from "../../public/images/logo.svg";
-import Leaf3 from "../../public/images/leaf3.png";
 import { socialIcons, bankImg, mainMenu, info } from "@/constants";
 
 const Footer = () => {
@@ -13,86 +11,63 @@ const Footer = () => {
         <Grid container spacing={1} justifyContent="space-between">
           <Grid item md={4} mt={3}>
             <Stack direction="row" spacing={2}>
-              <Image src={Logo} alt="Logo" width={42} height={39} />
-              <Typography
-                fontSize={25}
-                fontFamily="Poppins"
-                fontWeight={600}
-                color="#2A2521">
-                Shushi
-              </Typography>
+              <Box
+                component="img"
+                src="/images/logo.svg"
+                alt="Logo"
+                width={42}
+                height={39}
+              />
+              <Typography variant="footerTitle">Shushi</Typography>
             </Stack>
-            <Typography
-              mt={4}
-              fontSize={25}
-              fontFamily="Poppins"
-              fontWeight={300}
-              color="#2A2521"
-              maxWidth="375px">
-              Food for the body is not enough. There must be foods for the soul.
-            </Typography>
-            <Box ml={15}>
-              <Image src={Leaf3} alt="Leaf" />
+            <Box mt={4} maxWidth="375px">
+              <Typography variant="footerContent">
+                Food for the body is not enough. There must be foods for the
+                soul.
+              </Typography>
             </Box>
+            <Box
+              ml={15}
+              component="img"
+              src="/images/leaf3.png"
+              alt="Leaf"
+              width={106}
+              height={116}
+            />
           </Grid>
           <Grid item md={2} mt={3}>
-            <Typography
-              fontSize={25}
-              fontFamily="Poppins"
-              fontWeight={600}
-              color="#2A2521">
-              Main Menu
-            </Typography>
-            {mainMenu.map((menu, index) => (
-              <Typography
-                key={index}
-                mt={3}
-                fontSize={25}
-                fontFamily="Poppins"
-                fontWeight={300}
-                color="#2A2521"
-                sx={{ cursor: "pointer" }}>
-                {menu}
-              </Typography>
-            ))}
+            <Typography variant="footerTitle">Main Menu</Typography>
+            <Stack mt={3}>
+              {mainMenu.map((menu, index) => (
+                <Typography
+                  key={index}
+                  variant="footerContent"
+                  sx={{ cursor: "pointer" }}>
+                  {menu}
+                </Typography>
+              ))}
+            </Stack>
           </Grid>
           <Grid item md={3} mt={3}>
-            <Typography
-              fontSize={25}
-              fontFamily="Poppins"
-              fontWeight={600}
-              color="#2A2521">
-              Information
-            </Typography>
-            {info.map((info, index) => (
-              <Typography
-                key={index}
-                mt={3}
-                fontSize={25}
-                fontFamily="Poppins"
-                fontWeight={300}
-                color="#2A2521"
-                sx={{ cursor: "pointer" }}>
-                {info}
-              </Typography>
-            ))}
+            <Typography variant="footerTitle">Information</Typography>
+            <Stack mt={3}>
+              {info.map((info, index) => (
+                <Typography
+                  key={index}
+                  variant="footerContent"
+                  sx={{ cursor: "pointer" }}>
+                  {info}
+                </Typography>
+              ))}
+            </Stack>
           </Grid>
           <Grid item md={2} mt={3}>
-            <Typography
-              fontSize={25}
-              fontFamily="Poppins"
-              fontWeight={600}
-              color="#2A2521">
-              Address
-            </Typography>
-            <Typography
-              mt={3}
-              fontSize={25}
-              fontFamily="Poppins"
-              fontWeight={300}
-              color="#2A2521">
-              Greater Noida <br /> Sec-1, India
-            </Typography>
+            <Typography variant="footerTitle">Address</Typography>
+            <Stack mt={3}>
+              <Typography variant="footerContent">
+                Greater Noida <br /> Sec-1, India
+              </Typography>
+            </Stack>
           </Grid>
         </Grid>
         <Stack direction={{ md: "row" }} justifyContent="space-between" mb={10}>
