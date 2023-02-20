@@ -12,7 +12,12 @@ import mcard from "../../public/images/mcard.svg";
 import paypal from "../../public/images/paypal.svg";
 import visa from "../../public/images/visa.svg";
 
-export const navItems = ["Home", "About Us", "Popular", "Recently"];
+export const navItems = [
+  { title: "Home", url: "/" },
+  { title: "About Us", url: "#about" },
+  { title: "Popular", url: "#popular" },
+  { title: "Recently", url: "#recently" },
+];
 
 export const socialIcons = [
   { icon: FacebookRounded, link: "https://www.facebook.com/" },

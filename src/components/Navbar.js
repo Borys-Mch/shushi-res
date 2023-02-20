@@ -51,9 +51,9 @@ const Navbar = () => {
           }}
           spacing={4}
           alignItems="center">
-          {navItems.map((item) => (
-            <Link href={"/"} color="#2A2521" underline="none" key={item}>
-              <h2>{item}</h2>
+          {navItems.map(({ title, url }) => (
+            <Link href={url} color="#2A2521" underline="none" key={title}>
+              <h2>{title}</h2>
             </Link>
           ))}
         </Stack>
