@@ -32,3 +32,27 @@ export const bankImg = [visa, mcard, amexp, paypal, apple, google];
 export const mainMenu = ["About", "Menus", "Offers", "Events"];
 
 export const info = ["Contact", "Orders & Returns", "Videos", "reservation"];
+
+export const dishes = [
+  {
+    id: 1,
+    title: "Origin",
+    descr: "Japanese Dish",
+    price: 10.99,
+    img: "/images/products/home-sushi-rolls1.png",
+  },
+  {
+    id: 2,
+    title: "Spring Roll",
+    descr: "Japanese Dish",
+    price: 15.99,
+    img: "/images/products/home-sushi-rolls2.png",
+  },
+  {
+    id: 3,
+    title: "Sushi Roll",
+    descr: "Japanese Dish",
+    price: 19.99,
+    img: "/images/products/home-sushi-rolls3.png",
+  },
+];

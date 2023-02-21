@@ -64,11 +64,7 @@ const Newsletter = () => {
                     borderRadius: "70px",
                     maxWidth: "max-content",
                   }}>
-                  <CssTextField
-                    id="filled-basic"
-                    label="Enter Email"
-                    borderRadius="32px"
-                  />
+                  <CssTextField id="filled-basic" label="Enter Email" />
                   <Button
                     variant="contained"
                     color="warning"
