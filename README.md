@@ -14,4 +14,4 @@
 
 ## Result:
 
-[Shushi](https://shushi.dbm.pp.ua/)
+[Shushi](https://shushi.deren.icu/)
